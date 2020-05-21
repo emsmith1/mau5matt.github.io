@@ -1,3 +1,11 @@
+@media only screen and (max-width: 980px) {
+  #heading {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
+
 /* Universal Styles */
 
 body {
@@ -32,14 +40,14 @@ h4 {
 
 header {
   /*font-family: 'Comic Neue', cursive;*/
-  width: 90%;
+  width: 95%;
   position: relative;
   z-index: 1;
   height: 69px;
   /*border-bottom: 1px solid black;*/
   align-items: center;
   overflow: hidden;
-  padding: 15px 5%;
+  padding: 15px 2.5%;
   margin-bottom: 10px;
 }
 
@@ -51,7 +59,6 @@ header img {
 nav {
   text-align: right;
   flex-grow: 1;
-  padding-right: 40px;
 }
 
 nav span {
@@ -74,6 +81,8 @@ header h1 {
   height: 640px;
   background-image: url(images/brownie2.png);
   background-size: cover;
+  background-position: center;
+  margin-top: 5%;
 }
 
 #title {
