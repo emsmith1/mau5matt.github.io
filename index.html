@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Bookworm Bakery</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto+Slab:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
   <!-- Header -->
@@ -16,9 +18,11 @@
   <header class="flex-container">
     <img src="images/logo.png">
     <nav>
-      <span><a href="#mission">Mission</a></span>
-      <span><a href="#store">Featured Tea</a></span>
-      <span><a href="#locations">Locations</a></span>
+      <span><a href="#store">Menu</a></span>
+      <span><a href="#locations">Contact</a></span>
+      <span><a href="#" class="fa fa-facebook"></a></span>
+      <span><a href="#" class="fa fa-twitter"></a></span>
+      <span><a href="#" class="fa fa-instagram"></a></span>
     </nav>
   </header>
 
@@ -29,10 +33,10 @@
   <div class="main">
 
     <div id="title">
-      <h1 >Bookworm Bakery</h1>   
+      <h1>Bookworm Bakery</h1>
     </div>
 
-    <div id="heading">   
+    <div id="heading">
     </div>
 
     <!-- About -->
@@ -41,46 +45,858 @@
       <p>We are a bakery based in Failsworth, North Manchester and we specialise in luxury cupcakes a brownies.</p>
     </div>
 
-    <div id="store">
-      <h2>Tea of the Month</h2>
-      <h4>What&#39;s Steeping at The Tea Cozy?</h4>
-      <div class="flex-container items">
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-berryblitz.jpg" />
-          <span>Fall Berry Blitz Tea</span>
+    <!-- Seasonal -->
+
+    <div id="seasonal">
+      <div class="flex-container">
+        <div class="s-items">
+          <img src="images/fathersday.jpg" />
         </div>
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-spiced-rum.jpg" />
-          <span>Spiced Rum Tea</span>
-        </div>
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-donut.jpg" />
-          <span>Seasonal Donuts</span>
-        </div>
-        <div class="item">
-          <div id='product-component-1589888139335'></div>
-        </div>
-        <div class="item">
-          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-bedford-bizarre.jpg" />
-          <span>Bedford Bizarre Tea</span>
+        <div class="s-items">
+          <h2>Father's Day Cupcakes</h2>
+          <p>Now available! Order yours in time for the 21st June.</p>
+          <div id='product-component-1590072023951'></div>
+          <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'my-test-shop-lol.myshopify.com',
+                  storefrontAccessToken: '5def5a1f7fa8d97392b5d829b55fd9b1',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '4635172405327',
+                    node: document.getElementById('product-component-1590072023951'),
+                    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ],
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            "background-color": "#6bcfe7",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            }
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      }
+                    },
+                  });
+                });
+              }
+            })();
+/*]]>*/
+          </script>
         </div>
       </div>
     </div>
 
-  <!-- Contact Section -->
-  <div id="contact">
-    <h2>The Tea Cozy</h2>
-    <h5>contact@theteacozy.com</h5>
-    <h5>917-555-8904</h5>
-  </div>
+    <div id="store">
+      <h1>Our Products</h1>
+      <div class="flex-container items">
+        <div class="item">
+          <img src="images/cupcakes.jpg" />
+          <span>Cupcakes</span>
+          <div id='product-component-1590072908836'></div>
+          <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'my-test-shop-lol.myshopify.com',
+                  storefrontAccessToken: '5def5a1f7fa8d97392b5d829b55fd9b1',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '4618903617615',
+                    node: document.getElementById('product-component-1590072908836'),
+                    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ],
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            "background-color": "#6bcfe7",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            }
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      }
+                    },
+                  });
+                });
+              }
+            })();
+/*]]>*/
+          </script>
+        </div>
+        <div class="item">
+          <img src="images/cupcakes.jpg" />
+          <span>Cupcakes</span>
+          <div id='product-component-1590073203858'></div>
+          <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'my-test-shop-lol.myshopify.com',
+                  storefrontAccessToken: '5def5a1f7fa8d97392b5d829b55fd9b1',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '4618903617615',
+                    node: document.getElementById('product-component-1590073203858'),
+                    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ],
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            "background-color": "#6bcfe7",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            }
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      }
+                    },
+                  });
+                });
+              }
+            })();
+/*]]>*/
+          </script>
+        </div>
+        <div class="item">
+          <img src="images/cupcakes.jpg" />
+          <span>Cupcakes</span>
+          <div id='product-component-1590073272173'></div>
+          <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'my-test-shop-lol.myshopify.com',
+                  storefrontAccessToken: '5def5a1f7fa8d97392b5d829b55fd9b1',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '4618903617615',
+                    node: document.getElementById('product-component-1590073272173'),
+                    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ],
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            "background-color": "#6bcfe7",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            }
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      }
+                    },
+                  });
+                });
+              }
+            })();
+/*]]>*/
+          </script>
+        </div>
+        <div class="item">
+          <img src="images/cupcakes.jpg" />
+          <span>Cupcakes</span>
+          <div id='product-component-1590073316315'></div>
+          <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'my-test-shop-lol.myshopify.com',
+                  storefrontAccessToken: '5def5a1f7fa8d97392b5d829b55fd9b1',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '4618903617615',
+                    node: document.getElementById('product-component-1590073316315'),
+                    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ],
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            "background-color": "#6bcfe7",
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            },
+                            "border-radius": "40px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "font-family": "Poppins, sans-serif",
+                            "font-weight": "bold",
+                            "background-color": "#6bcfe7",
+                            ":hover": {
+                              "background-color": "#60bad0"
+                            },
+                            ":focus": {
+                              "background-color": "#60bad0"
+                            }
+                          }
+                        },
+                        "googleFonts": [
+                          "Poppins"
+                        ]
+                      }
+                    },
+                  });
+                });
+              }
+            })();
+/*]]>*/
+          </script>
+        </div>
+        <div class="item">
+          <span>Check out our full menu >>></span>
+        </div>
+      </div>
+    </div>
 
-  <!-- Footer Section -->
-  <footer>
-    <h5>copyright The Tea Cozy 2017</h5>
-  </footer>
+    <!-- Contact Section -->
+    <div id="contact" class="flex-container">
+      <div class="f-map">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="490" height="316" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=10%20Verona%20Dr%2C%20Failsworth%2C%20Manchester%20M40%202RL%2C%20UK&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+        </div>
+      </div>
+      <div class="f-items">
+        <h2>Contact</h2>
+        <h5>10 Verona Dr, Failsworth, Manchester M40 2RL, UK</h5>
+        <h5>bookwormbakery@hotmail.com</h5>
+        <h5>07465 711122</h5>
+      </div>
+    </div>
 
+    <!-- Footer Section -->
+    <footer>
+      <h5>© Bookworm Bakery 2020</h5>
+    </footer>
 
-  <script type="text/javascript" src="https://external-production.codecademy.com/assets/relay.js"></script>
 </body>
 
 </html>
