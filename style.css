@@ -104,7 +104,7 @@ header h1 {
 #intro {
   display: flex;
   height: 20rem;
-  background-color: #ffdcff;
+  background-color: #ffefff;
   vertical-align: middle;
   margin: auto 0;
   margin-bottom: 70px;
@@ -168,12 +168,12 @@ header h1 {
 
 #contact {
   height: auto;
-  background-color: #ffdcff;
+  background-color: #ffefff;
 }
 
 .f-items {
   flex-grow: 1;
-  background-color: #ffdcff;
+  background-color: #ffefff;
   margin: auto;
 }
 /* Footer Section */
@@ -181,7 +181,7 @@ header h1 {
 footer {
   text-align: left;
   padding-left: 20px;
-  background-color: #ffdcff;
+  background-color: #ffefff;
   margin: 0;
   padding: 30px;
 }
